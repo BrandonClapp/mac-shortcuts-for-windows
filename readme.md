@@ -18,9 +18,11 @@ AutoHotKey is yet another tool that can be used to remap keys, but is more power
 
 Go to Start Menu > Run (or alternatively, Windows Key + R) and run `shell:startup`. This should open a folder in Windows Explorer where our AutoHotKey script will be executed upon startup.
 
+![run shell startup](./run.png)
+
 In this folder, create a new .ahk script by `Right clicking > New > AutoHotKey Script`. Alternatively, just creating a file with an `.ahk` file extension will also work. The name of this script doesn't really matter.
 ![new script](./new-script.png)
 
-![run shell startup](./run.png)
+You should now have something like this.
 
 ![script folder](./script-folder.png)
