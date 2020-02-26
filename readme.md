@@ -125,7 +125,9 @@ Return
 
 ## 5. Save and run the script
 
+From the Windows Explorer window where the script resides, right click it and select Run.
 
+![run script](./run-script.png)
 
 ## 6. Remember to sign out and back in
 
