@@ -125,10 +125,16 @@ Return
 
 ## 5. Save and run the script
 
-From the Windows Explorer window where the script resides, right click it and select Run.
+From the Windows Explorer window where the script resides, right click it and select Run Script.
 
 ![run script](./run-script.png)
 
 ## 6. Remember to sign out and back in
 
 Because the SharpKeys tool edits the registry and a new session is required.
+
+------------------------
+
+With any luck, you should have an OXS editing experience using familiar shortcuts.
+
+![editing](./editing.png)
