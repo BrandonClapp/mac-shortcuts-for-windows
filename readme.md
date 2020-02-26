@@ -137,4 +137,4 @@ Because the SharpKeys tool edits the registry and a new session is required.
 
 With any luck, you should have an OXS editing experience using familiar shortcuts.
 
-![editing](./editing.png)
+![editing](./editing.gif)
