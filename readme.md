@@ -6,7 +6,7 @@ You can find the msi package of the latest version here https://github.com/randy
 
 SharpKeys is a tool that can be used to remap keys to other keys. This is my configuration, which maps Left Ctrl to Left Alt and vice-versa. After creating these mappings, you will need to sign out and back in for the changes to take place.
 
-![sharp keys config](./sharpkeys.png)
+![sharp keys config](./images/sharpkeys.png)
 
 ## 2. Install AutoHotKey
 
@@ -18,14 +18,14 @@ AutoHotKey is yet another tool that can be used to remap keys, but is more power
 
 Go to Start Menu > Run (or alternatively, Windows Key + R) and run `shell:startup`. This should open a folder in Windows Explorer where our AutoHotKey script will be executed upon startup.
 
-![run shell startup](./run.png)
+![run shell startup](./images/run.png)
 
 In this folder, create a new .ahk script by `Right clicking > New > AutoHotKey Script`. Alternatively, just creating a file with an `.ahk` file extension will also work. The name of this script doesn't really matter.
-![new script](./new-script.png)
+![new script](./images/new-script.png)
 
 You should now have something like this.
 
-![script folder](./script-folder.png)
+![script folder](./images/script-folder.png)
 
 ## 4. Populate and run the script
 
@@ -127,14 +127,14 @@ Return
 
 From the Windows Explorer window where the script resides, right click it and select Run Script.
 
-![run script](./run-script.png)
+![run script](./images/run-script.png)
 
 ## 6. Remember to sign out and back in
 
 Because the SharpKeys tool edits the registry and a new session is required.
 
-------------------------
+---
 
 With any luck, you should have an OXS editing experience using familiar shortcuts.
 
-![editing](./editing.gif)
+![editing](./images/editing.gif)
