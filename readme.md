@@ -1,4 +1,4 @@
-Frequently swapping between OSX and Windows devices can be frustrating due to keyboard shortcut muscle memory. This is a hacked together solution for mapping familiar Mac OSX shortcuts to their Windows equivilent counterpart, at least for basic functionality and text editing.
+Frequently swapping between OSX and Windows devices can be frustrating due to keyboard shortcut muscle memory. If your goal is to use Mac style shortcuts on a Windows device, this is a hacked together solution for mapping familiar Mac OSX shortcuts to their Windows equivilent counterpart, at least for basic functionality and text editing.
 
 ## 1. Install SharpKeys
 
@@ -26,3 +26,105 @@ In this folder, create a new .ahk script by `Right clicking > New > AutoHotKey S
 You should now have something like this.
 
 ![script folder](./script-folder.png)
+
+## 4. Populate and run the script
+
+This is a script that I found [here](https://medium.com/@chrisdhanaraj/mapping-your-macos-keybinds-to-windows-b6009c50065b) and altered a bit more to enhance the text editing shortcuts.
+
+```
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+; #Warn  ; Enable warnings to assist with detecting common errors.
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+; Navigate between apps
+LCtrl & Tab:: AltTab
+!Tab:: Send ^{Tab}
+!+Tab:: Send ^+{Tab}
+
+; Open Windows menu (Spotlight)
+^Space:: Send ^{Esc}
+
+; Select previous word
++#Left::
+	Send ^+{Left}
+Return
+
+; Select next word
++#Right::
+	Send ^+{Right}
+Return
+
+; Navigate previous word
+#Left::
+	Send ^{Left}
+Return
+
+; Navigate next word
+#Right::
+	Send ^{Right}
+Return
+
+; Navigate to beginning of line
+^Left::
+    Send {Home}
+Return
+
+; Navigate to end of line
+^Right::
+    Send {End}
+Return
+
+; Select to beginning of line
+^+Left::
+    Send +{Home}
+Return
+
+; Select to end of line
+^+Right::
+    Send +{End}
+Return
+
+; Navigate to top of document
+^Up::
+    Send ^{Home}
+Return
+
+; Navigate to end of document
+^Down::
+    Send ^{End}
+Return
+
+; Select to top of document
+^+Up::
+    Send ^+{Home}
+Return
+
+; Select to end of document
+^+Down::
+    Send ^+{End}
+Return
+
+; Close current app
+^Q::
+	Send !{f4}
+Return
+
+; Go to next tab
+^#Right::
+	Send ^{Tab}
+Return
+
+; Go to previous tab
+^#Left::
+	Send ^+{Tab}
+Return
+```
+
+## 5. Save and run the script
+
+
+
+## 6. Remember to sign out and back in
+
+Because the SharpKeys tool edits the registry and a new session is required.
