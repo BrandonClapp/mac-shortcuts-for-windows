@@ -31,6 +31,8 @@ You should now have something like this.
 
 This is a script that I found [here](https://medium.com/@chrisdhanaraj/mapping-your-macos-keybinds-to-windows-b6009c50065b) and altered a bit more to enhance the text editing shortcuts.
 
+Alternative, get it [here](./OSXKeys.ahk)
+
 ```
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
